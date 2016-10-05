@@ -44,7 +44,7 @@
     #include <stdio.h>
 #endif
 
-#ifndef WOLFSSL_STATIC_MEMORY
+
 /* Set these to default values initially. */
 static wolfSSL_Malloc_cb  malloc_function = 0;
 static wolfSSL_Free_cb    free_function = 0;
@@ -73,7 +73,6 @@ int wolfSSL_SetAllocators(wolfSSL_Malloc_cb  mf,
 
     return res;
 }
-#endif
 
 #ifndef WOLFSSL_STATIC_MEMORY
 #ifdef WOLFSSL_DEBUG_MEMORY
